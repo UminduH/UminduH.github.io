@@ -29,13 +29,19 @@ body {
   text-decoration: none;
 }
 
-/* Nav Links */
-.nav-bar {
-  display: flex;
-  width: 380px;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 2rem;
+/* Desktop Navigation */
+.nav-bar-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-bar-desktop {
+    display: flex;
+    width: 380px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+  }
 }
 
 .nav-link {
@@ -81,6 +87,48 @@ body {
   background-color: #2563eb;
 }
 
+/* Mobile Navigation */
+.mobile-menu-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: #1f2937;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: flex;
+  }
+}
+
+.mobile-nav-links {
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-nav-link {
+  color: #1f2937;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.mobile-nav-link:hover {
+  color: #3b82f6;
+}
+
 
 /* Hero Section */
 .hero-section {
@@ -108,10 +156,16 @@ body {
 }
 
 .hero-title {
-  font-size: 3.8rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #111827;
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3.8rem;
+  }
 }
 
 .highlighted-name {
@@ -119,9 +173,15 @@ body {
 }
 
 .hero-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #374151;
   margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
 }
 
 .hero-buttons {
@@ -189,4 +249,12 @@ body {
   60% {
     transform: translateY(-5px);
   }
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
 }
