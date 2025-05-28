@@ -73,9 +73,6 @@
   border: none;
   border-radius: 9999px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   opacity: 0;
   visibility: hidden;
   cursor: pointer;
@@ -83,10 +80,5 @@
 }
 
 .back-to-top-btn i {
-  width: 1.25rem;
-  height: 1.25rem;
   font-size: 1.3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
