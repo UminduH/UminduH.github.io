@@ -45,7 +45,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 
 // Update active link in header
 const sections = document.querySelectorAll('section');
-const navLinks = document.querySelectorAll('.nav-link');
+const navLinks = document.querySelectorAll('.js-nav-link');
 
 window.addEventListener('scroll', () => {
   let currentSection = '';

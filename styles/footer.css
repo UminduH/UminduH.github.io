@@ -1,0 +1,116 @@
+.footer {
+  background-color: #111827;
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer-container {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+}
+
+.footer-logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.footer-description {
+  color: #9ca3af;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  max-width: 400px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social-icon {
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social-icon:hover {
+  color: white;
+}
+
+.footer-heading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link {
+  display: inline-block;
+  line-height: 1.5;
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1f2937;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer-copy {
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+.footer-policies {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-policy-link {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.footer-policy-link:hover {
+  color: white;
+}
