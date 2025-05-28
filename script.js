@@ -112,3 +112,49 @@ function downloadFile(format) {
 
 downloadPdf.addEventListener('click', () => downloadFile('pdf'));
 downloadDocx.addEventListener('click', () => downloadFile('docx'));
+
+
+// Generate skills
+const skills = [{
+  name: 'HTML/CSS',
+  proficiencyPercent: 95
+}, {
+  name: 'JavaScript',
+  proficiencyPercent: 92
+}, {
+  name: 'Java',
+  proficiencyPercent: 82
+}, {
+  name: 'PHP',
+  proficiencyPercent: 85
+}, {
+  name: 'SQL (MySQL)',
+  proficiencyPercent: 88
+}, {
+  name: 'Flutter (Dart)',
+  proficiencyPercent: 90
+}, {
+  name: 'UI/UX Design',
+  proficiencyPercent: 75
+}, {
+  name: 'Git/GitHub',
+  proficiencyPercent: 78
+}];
+
+let skillsHTML = '';
+
+skills.forEach((skill) => {
+  skillsHTML += `
+    <div class="skill-item">
+      <div class="skill-label">
+        <span>${skill.name}</span>
+        <span>${skill.proficiencyPercent}%</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-progress" style="width: ${skill.proficiencyPercent}%;"></div>
+      </div>
+    </div>
+  `;
+});
+
+document.querySelector('.js-skills-grid').innerHTML = skillsHTML;

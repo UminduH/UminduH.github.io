@@ -1,0 +1,64 @@
+/* Miscellaneous styles */
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Button styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.9rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #3b82f6;
+  border: 1px solid #3b82f6
+}
+
+.btn-secondary:hover {
+  background-color: #f9fafb;
+}
+
+
+/* Text color styles */
+.text-red {
+  color: #ef4444;
+}
+
+.text-blue {
+  color: #3b82f6;
+}
+
+
+/* Display styles */
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
