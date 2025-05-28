@@ -66,3 +66,49 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+
+// Download resume functionality
+const downloadBtn = document.getElementById('js-download-resume-btn');
+const resumeModal = document.getElementById('js-resume-modal');
+const closeModalIcon = document.getElementById('js-close-modal');
+const downloadPdf = document.getElementById('js-download-pdf');
+const downloadDocx = document.getElementById('js-download-docx');
+
+downloadBtn.addEventListener('click', openModal);
+closeModalIcon.addEventListener('click', closeModal);
+
+resumeModal.addEventListener('click', (e) => {
+  if (e.target === resumeModal) {
+    closeModal();
+  }
+});
+
+function openModal() {
+  resumeModal.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  resumeModal.classList.add('hidden');
+  document.body.style.overflow = '';
+}
+
+function downloadFile(format) {
+  const fileName = `umindu-haputhanthri-resume.${format}`;
+  const link = document.createElement('a');
+
+  console.log(fileName);
+
+  link.href = `./assets/documents/${fileName}`;
+  link.download = fileName;
+
+  document.body.appendChild(link);
+  link.click();
+
+  document.body.removeChild(link);
+  closeModal();
+}
+
+downloadPdf.addEventListener('click', () => downloadFile('pdf'));
+downloadDocx.addEventListener('click', () => downloadFile('docx'));

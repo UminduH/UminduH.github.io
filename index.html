@@ -77,7 +77,9 @@
         <div class="about-image-wrapper">
           <img 
             src="./assets/images/about-profile-picture.jpg" 
-            alt="Umindu Haputhanthri - Profile Picture" class="about-image"
+            alt="Umindu Haputhanthri - Profile Picture" 
+            loading="lazy" 
+            class="about-image"
           />
         </div>
 
@@ -92,9 +94,12 @@
 
           <h3 class="subsection-title">My Skills</h3>
           <div class="skills-grid">
+
+            <!-- TODO: Generate the skills using JavaScript -->
+
             <div class="skill-item">
               <div class="skill-label">
-                <span>Skill 01</span>
+                <span>HTML/CSS</span>
                 <span>95%</span>
               </div>
               <div class="skill-bar">
@@ -104,7 +109,7 @@
 
             <div class="skill-item">
               <div class="skill-label">
-                <span>Skill 02</span>
+                <span>JavaScript</span>
                 <span>90%</span>
               </div>
               <div class="skill-bar">
@@ -114,7 +119,7 @@
 
             <div class="skill-item">
               <div class="skill-label">
-                <span>Skill 03</span>
+                <span>Java</span>
                 <span>85%</span>
               </div>
               <div class="skill-bar">
@@ -124,7 +129,7 @@
 
             <div class="skill-item">
               <div class="skill-label">
-                <span>Skill 04</span>
+                <span>PHP</span>
                 <span>88%</span>
               </div>
               <div class="skill-bar">
@@ -134,29 +139,89 @@
 
             <div class="skill-item">
               <div class="skill-label">
-                <span>Skill 05</span>
-                <span>80%</span>
+                <span>SQL (MySQL)</span>
+                <span>82%</span>
               </div>
               <div class="skill-bar">
-                <div class="skill-progress" style="width: 80%;"></div>
+                <div class="skill-progress" style="width: 82%;"></div>
               </div>
             </div>
 
             <div class="skill-item">
               <div class="skill-label">
-                <span>Skill 06</span>
+                <span>Flutter (Dart)</span>
                 <span>92%</span>
               </div>
               <div class="skill-bar">
                 <div class="skill-progress" style="width: 92%;"></div>
               </div>
             </div>
+
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>UI/UX Design</span>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 75%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-label">
+                <span>Git/GitHub</span>
+                <span>78%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 78%;"></div>
+              </div>
+            </div>
           </div>
 
-          <button class="btn btn-primary icon-left">
+          <button class="btn btn-primary icon-left" 
+            id="js-download-resume-btn">
             <i class="ri-download-line"></i>
             Download Resume
           </button>
+
+          <!-- Modal -->
+          <div class="modal hidden" id="js-resume-modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3>Download Resume</h3>
+                <button class="close-btn" id="js-close-modal">
+                  <i class="ri-close-line"></i>
+                </button>
+              </div>
+
+              <p class="modal-text">
+                Thank you for your interest in my resume. Please select your preferred format below:
+              </p>
+              <div class="modal-options">
+                <button class="modal-option" id="js-download-pdf">
+                  <div class="option-info">
+                    <i class="ri-file-pdf-line text-red"></i>
+                    <div>
+                      <span>PDF Format</span>
+                      <small>High-quality print-ready version</small>
+                    </div>
+                  </div>
+                  <span class="option-size">107 KB</span>
+                </button>
+
+                <button class="modal-option" id="js-download-docx">
+                  <div class="option-info">
+                    <i class="ri-file-word-line text-blue"></i>
+                    <div>
+                      <span>Word Format</span>
+                      <small>Editable DOCX version</small>
+                    </div>
+                  </div>
+                  <span class="option-size">74 KB</span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
