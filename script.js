@@ -158,3 +158,24 @@ skills.forEach((skill) => {
 });
 
 document.querySelector('.js-skills-grid').innerHTML = skillsHTML;
+
+
+// Back to top button functionality
+const backToTopBtn = document.getElementById('js-back-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 300) {
+    backToTopBtn.style.opacity = '1';
+    backToTopBtn.style.visibility = 'visible';
+  } else {
+    backToTopBtn.style.opacity = '0';
+    backToTopBtn.style.visibility = 'hidden';
+  }
+});
+
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/hero.css">
   <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/projects.css">
   <link rel="stylesheet" href="styles/general.css">
 </head>
 <body>
@@ -26,7 +27,7 @@
       <nav class="nav-bar-desktop">
         <a href="#home" class="nav-link active">Home</a>
         <a href="#about" class="nav-link">About</a>
-        <a href="#" class="nav-link">Projects</a>
+        <a href="#projects" class="nav-link">Projects</a>
         <a href="#" class="contact-btn">Contact Me</a>
       </nav>
 
@@ -41,7 +42,7 @@
       <div class="mobile-nav-links">
         <a href="#home" class="mobile-nav-link">Home</a>
         <a href="#about" class="mobile-nav-link">About</a>
-        <a href="#" class="mobile-nav-link">Projects</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
         <a href="#" class="mobile-nav-link">Contact Me</a>
       </div>
     </div>
@@ -58,7 +59,7 @@
           Software Engineering undergraduate passionate about learning, coding, and creating real-world digital experiences
         </p>
         <div class="hero-buttons">
-          <a href="#" class="btn btn-primary">View My Work</a>
+          <a href="#projects" class="btn btn-primary">View My Work</a>
           <a href="#" class="btn btn-secondary">Get in Touch</a>
         </div>
       </div>
@@ -147,6 +148,92 @@
       </div>
     </div>
   </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="projects-container">
+      <h2 class="projects-title">My Projects</h2>
+      <p class="projects-subtitle">
+        Here's a selection of my recent work. Each project represents a unique challenge and solution.
+      </p>
+
+      <div class="projects-grid">
+
+        <!-- TODO: Generate projecs using JavaScript -->
+
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/images/projects/sample-project.jpeg" alt="Project 01 - Sample Project" class="project-image">
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-name">Project 01</h3>
+            <p class="project-description">
+              A sample description for project 01 to test the design and layouts and how it looks.
+            </p>
+
+            <div class="project-tags">
+              <span class="tag tag-blue">Tech 1</span>
+              <span class="tag tag-green">Tech 2</span>
+              <span class="tag tag-purple">Tech 3</span>
+              <span class="tag tag-yellow">Tech 4</span>
+            </div>
+
+            <a href="#" class="project-link">View Project &#129138;</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/images/projects/sample-project.jpeg" alt="Project 02 - Sample Project" class="project-image">
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-name">Project 02</h3>
+            <p class="project-description">
+              A sample description for project 02 to test the design and layouts and how it looks.
+            </p>
+
+            <div class="project-tags">
+              <span class="tag tag-blue">Tech 1</span>
+              <span class="tag tag-green">Tech 2</span>
+              <span class="tag tag-purple">Tech 3</span>
+              <span class="tag tag-yellow">Tech 4</span>
+            </div>
+
+            <a href="#" class="project-link">View Project &#129138;</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image-container">
+            <img src="./assets/images/projects/sample-project.jpeg" alt="Project 03 - Sample Project" class="project-image">
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-name">Project 03</h3>
+            <p class="project-description">
+              A sample description for project 03 to test the design and layouts and how it looks.
+            </p>
+
+            <div class="project-tags">
+              <span class="tag tag-blue">Tech 1</span>
+              <span class="tag tag-green">Tech 2</span>
+              <span class="tag tag-purple">Tech 3</span>
+              <span class="tag tag-yellow">Tech 4</span>
+            </div>
+
+            <a href="#" class="project-link">View Project &#129138;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" id="js-back-to-top">
+    <i class="ri-arrow-up-line ri-lg"></i>
+  </button>
 
   <script src="script.js"></script>
 </body>
