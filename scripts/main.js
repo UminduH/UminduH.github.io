@@ -1,6 +1,7 @@
 import { aboutFunctionality } from "./about.js";
 import { contactFunctionality } from "./contact.js";
 import { headerFunctionality } from "./header.js";
+import { newsletterFunctionality } from "./newsletter.js";
 import { projectsFunctionality } from "./projects.js";
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -9,6 +10,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   setupBackToTopButton();
 });
 
+// Load all the sections and display them accordingly
 async function renderPageSections() {
   const sections = [
     { name: 'header', fn: headerFunctionality },
@@ -16,7 +18,7 @@ async function renderPageSections() {
     { name: 'about', fn: aboutFunctionality },
     { name: 'projects', fn: projectsFunctionality },
     { name: 'contact', fn: contactFunctionality },
-    { name: 'newsletter' },
+    { name: 'newsletter', fn: newsletterFunctionality },
     { name: 'footer' }
   ];
 
