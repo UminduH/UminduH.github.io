@@ -3,15 +3,39 @@ import { contactFunctionality } from "./contact.js";
 import { headerFunctionality } from "./header.js";
 import { projectsFunctionality } from "./projects.js";
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+  await renderPageSections();
   setupSmoothScroll();
   setupBackToTopButton();
-
-  headerFunctionality();
-  aboutFunctionality();
-  projectsFunctionality();
-  contactFunctionality();
 });
+
+async function renderPageSections() {
+  const sections = [
+    { name: 'header', fn: headerFunctionality },
+    { name: 'hero' },
+    { name: 'about', fn: aboutFunctionality },
+    { name: 'projects', fn: projectsFunctionality },
+    { name: 'contact', fn: contactFunctionality },
+    { name: 'newsletter' },
+    { name: 'footer' }
+  ];
+
+  await Promise.all(
+    sections.map(section => fetchSectionHTML(section.name))
+  );
+
+  sections.forEach((section) => {
+    if (section.fn) section.fn();
+  });
+}
+
+// Fetch HTML for each section
+async function fetchSectionHTML(section) {
+  const response = await fetch(`./sections/${section}.html`);
+  const html = await response.text();
+  const container = document.getElementById(`js-${section}-placeholder`);
+  if (container) container.innerHTML = html;
+}
 
 // Smooth navigation of sections
 function setupSmoothScroll() {

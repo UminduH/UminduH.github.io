@@ -4,31 +4,16 @@ export function aboutFunctionality() {
 
   // Generate skills section
   function renderSkills() {
-    const skills = [{
-      name: 'HTML/CSS',
-      proficiencyPercent: 95
-    }, {
-      name: 'JavaScript',
-      proficiencyPercent: 92
-    }, {
-      name: 'Java',
-      proficiencyPercent: 82
-    }, {
-      name: 'PHP',
-      proficiencyPercent: 85
-    }, {
-      name: 'SQL (MySQL)',
-      proficiencyPercent: 88
-    }, {
-      name: 'Flutter (Dart)',
-      proficiencyPercent: 90
-    }, {
-      name: 'UI/UX Design',
-      proficiencyPercent: 75
-    }, {
-      name: 'Git/GitHub',
-      proficiencyPercent: 78
-    }];
+    const skills = [
+      { name: 'HTML/CSS', proficiencyPercent: 95 },
+      { name: 'JavaScript', proficiencyPercent: 92 },
+      { name: 'Java', proficiencyPercent: 82 },
+      { name: 'PHP', proficiencyPercent: 85 },
+      { name: 'SQL (MySQL)', proficiencyPercent: 88 },
+      { name: 'Flutter (Dart)', proficiencyPercent: 90 },
+      { name: 'UI/UX Design', proficiencyPercent: 75 },
+      { name: 'Git/GitHub', proficiencyPercent: 78 }
+    ];
 
     let skillsHTML = '';
 
@@ -82,8 +67,6 @@ export function aboutFunctionality() {
     function downloadFile(format) {
       const fileName = `umindu-haputhanthri-resume.${format}`;
       const link = document.createElement('a');
-
-      console.log(fileName);
 
       link.href = `./assets/documents/${fileName}`;
       link.download = fileName;

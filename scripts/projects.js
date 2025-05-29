@@ -7,114 +7,72 @@ export function projectsFunctionality() {
       imagePath: './assets/images/projects/sample-project.jpeg',
       name: 'Project 01',
       description: 'A sample description for project 01 to test the design and layouts and how it looks.',
-      tags: [{
-        color:'blue',
-        technology: 'Tech 1'
-      }, {
-        color:'green',
-        technology: 'Tech 2'
-      }, {
-        color:'purple',
-        technology: 'Tech 3'
-      }, {
-        color:'yellow',
-        technology: 'Tech 4'
-      }],
+      tags: [
+        { color:'blue', technology: 'Tech 1' },
+        { color:'green', technology: 'Tech 2' },
+        { color:'purple', technology: 'Tech 3' },
+        { color:'yellow', technology: 'Tech 4' }
+      ],
       link: '#'
 
     }, {
       imagePath: './assets/images/projects/sample-project.jpeg',
       name: 'Project 02',
       description: 'A sample description for project 02 to test the design and layouts and how it looks.',
-      tags: [{
-        color:'blue',
-        technology: 'Tech 1'
-      }, {
-        color:'red',
-        technology: 'Tech 2'
-      }, {
-        color:'indigo',
-        technology: 'Tech 3'
-      }, {
-        color:'green',
-        technology: 'Tech 4'
-      }],
+      tags: [
+        { color:'blue', technology: 'Tech 1' },
+        { color:'red', technology: 'Tech 2' },
+        { color:'indigo', technology: 'Tech 3' },
+        { color:'green', technology: 'Tech 4' }
+      ],
       link: '#'
 
     }, {
       imagePath: './assets/images/projects/sample-project.jpeg',
       name: 'Project 03',
       description: 'A sample description for project 03 to test the design and layouts and how it looks.',
-      tags: [{
-        color:'purple',
-        technology: 'Tech 1'
-      }, {
-        color:'red',
-        technology: 'Tech 2'
-      }, {
-        color:'yellow',
-        technology: 'Tech 3'
-      }, {
-        color:'blue',
-        technology: 'Tech 4'
-      }],
+      tags: [
+        { color:'purple', technology: 'Tech 1' },
+        { color:'red', technology: 'Tech 2' },
+        { color:'yellow', technology: 'Tech 3' },
+        { color:'blue', technology: 'Tech 4' }
+      ],
       link: '#'
 
     }, {
       imagePath: './assets/images/projects/sample-project.jpeg',
       name: 'Project 04',
       description: 'A sample description for project 04 to test the design and layouts and how it looks.',
-      tags: [{
-        color:'blue',
-        technology: 'Tech 1'
-      }, {
-        color:'green',
-        technology: 'Tech 2'
-      }, {
-        color:'yellow',
-        technology: 'Tech 3'
-      }, {
-        color:'red',
-        technology: 'Tech 4'
-      }],
+      tags: [
+        { color:'blue', technology: 'Tech 1' },
+        { color:'green', technology: 'Tech 2' },
+        { color:'yellow', technology: 'Tech 3' },
+        { color:'red', technology: 'Tech 4' }
+      ],
       link: '#'
 
     }, {
       imagePath: './assets/images/projects/sample-project.jpeg',
       name: 'Project 05',
       description: 'A sample description for project 05 to test the design and layouts and how it looks.',
-      tags: [{
-        color:'blue',
-        technology: 'Tech 1'
-      }, {
-        color:'green',
-        technology: 'Tech 2'
-      }, {
-        color:'purple',
-        technology: 'Tech 3'
-      }, {
-        color:'yellow',
-        technology: 'Tech 4'
-      }],
+      tags: [
+        { color:'blue', technology: 'Tech 1' },
+        { color:'green', technology: 'Tech 2' },
+        { color:'purple', technology: 'Tech 3' },
+        { color:'yellow', technology: 'Tech 4' }
+      ],
       link: '#'
 
     }, {
       imagePath: './assets/images/projects/sample-project.jpeg',
       name: 'Project 06',
       description: 'A sample description for project 06 to test the design and layouts and how it looks.',
-      tags: [{
-        color:'purple',
-        technology: 'Tech 1'
-      }, {
-        color:'blue',
-        technology: 'Tech 2'
-      }, {
-        color:'red',
-        technology: 'Tech 3'
-      }, {
-        color:'green',
-        technology: 'Tech 4'
-      }],
+      tags: [
+        { color:'purple', technology: 'Tech 1' },
+        { color:'blue', technology: 'Tech 2' },
+        { color:'red', technology: 'Tech 3' },
+        { color:'green', technology: 'Tech 4' }
+      ],
       link: '#'
     }];
 
