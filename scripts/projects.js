@@ -5,75 +5,98 @@ export function projectsFunctionality() {
   function renderProjects() {
     const projects = [{
       imagePath: './assets/images/projects/sample-project.jpeg',
-      name: 'Project 01',
-      description: 'A sample description for project 01 to test the design and layouts and how it looks.',
+      name: 'GO-SURF.LK - Online Surfboard Renting System',
+      description: 'A surfboard rental platform with user reviews, board filtering, inquiry handling, and a full-featured admin panel for managing rentals and operations.',
       tags: [
-        { color:'blue', technology: 'Tech 1' },
-        { color:'green', technology: 'Tech 2' },
-        { color:'purple', technology: 'Tech 3' },
-        { color:'yellow', technology: 'Tech 4' }
+        { color:'blue', technology: 'PHP' },
+        { color:'green', technology: 'MySQL' },
+        { color:'purple', technology: 'JavaScript' },
+        { color:'yellow', technology: 'HTML/CSS' }
       ],
-      link: '#'
+      link: 'https://github.com/ArvinFox/Go_Surf_Website',
+      isGroupProject: true
 
     }, {
       imagePath: './assets/images/projects/sample-project.jpeg',
-      name: 'Project 02',
-      description: 'A sample description for project 02 to test the design and layouts and how it looks.',
+      name: 'SilverKnight Cinema - Online Movie Booking System',
+      description: 'A cinema ticketing system with movie scheduling, bookings, promotions, and a comprehensive admin panel with PayPal integration.',
       tags: [
-        { color:'blue', technology: 'Tech 1' },
-        { color:'red', technology: 'Tech 2' },
-        { color:'indigo', technology: 'Tech 3' },
-        { color:'green', technology: 'Tech 4' }
+        { color:'blue', technology: 'Java' },
+        { color:'red', technology: 'SQL Server' },
+        { color:'indigo', technology: 'JSP/Servlets' },
+        { color:'green', technology: 'JavaScript' },
+        { color:'pink', technology: 'HTML/CSS' },
+        { color:'yellow', technology: 'PayPal API' }
       ],
-      link: '#'
+      link: 'https://github.com/ArvinFox/SilverKnightCinema---Movie-Ticket-Booking-Website',
+      isGroupProject: true
 
     }, {
       imagePath: './assets/images/projects/sample-project.jpeg',
-      name: 'Project 03',
-      description: 'A sample description for project 03 to test the design and layouts and how it looks.',
+      name: 'LifeBlood - Blood Donation Management System',
+      description: 'A cross-platform blood donation app with donor verification, medical uploads, donation history, and admin event management features.',
       tags: [
-        { color:'purple', technology: 'Tech 1' },
-        { color:'red', technology: 'Tech 2' },
-        { color:'yellow', technology: 'Tech 3' },
-        { color:'blue', technology: 'Tech 4' }
+        { color:'purple', technology: 'Flutter' },
+        { color:'red', technology: 'Firebase' },
+        { color:'blue', technology: 'Supabase' },
+        { color:'green', technology: 'Twilio' },
+        { color:'pink', technology: 'Google Maps' },
       ],
-      link: '#'
+      link: 'https://github.com/ArvinFox/LifeBlood-Blood-Donation-App',
+      isGroupProject: true
 
     }, {
       imagePath: './assets/images/projects/sample-project.jpeg',
-      name: 'Project 04',
-      description: 'A sample description for project 04 to test the design and layouts and how it looks.',
+      name: 'ShuttleMaster - NSBM Transpotation App',
+      description: 'A shuttle booking app with role-based views, OTP login, real-time trip info, and booking management for students and drivers.',
       tags: [
-        { color:'blue', technology: 'Tech 1' },
-        { color:'green', technology: 'Tech 2' },
-        { color:'yellow', technology: 'Tech 3' },
-        { color:'red', technology: 'Tech 4' }
+        { color:'blue', technology: 'Flutter' },
+        { color:'green', technology: 'Firebase' },
+        { color:'yellow', technology: 'Twilio' },
+        { color:'red', technology: 'Stripe' },
+        { color:'purple', technology: 'Node.js' }
       ],
-      link: '#'
+      link: 'https://github.com/ArvinFox/ShuttleMaster-Bus-Ticket-Booking-App',
+      isGroupProject: true
 
     }, {
       imagePath: './assets/images/projects/sample-project.jpeg',
-      name: 'Project 05',
-      description: 'A sample description for project 05 to test the design and layouts and how it looks.',
+      name: 'Smart SellPoint - Retail POS System',
+      description: 'A web-based POS system for retail shops with billing, inventory tracking, staff login, and product management.',
       tags: [
-        { color:'blue', technology: 'Tech 1' },
-        { color:'green', technology: 'Tech 2' },
-        { color:'purple', technology: 'Tech 3' },
-        { color:'yellow', technology: 'Tech 4' }
+        { color:'pink', technology: 'Java' },
+        { color:'indigo', technology: 'SQL Server' },
+        { color:'green', technology: 'JSP/Servlets' },
+        { color:'red', technology: 'JavaScript' },
+        { color:'yellow', technology: 'HTML/CSS' },
       ],
-      link: '#'
+      link: 'https://github.com/UminduH/Smart-SellPoint'
 
     }, {
       imagePath: './assets/images/projects/sample-project.jpeg',
-      name: 'Project 06',
-      description: 'A sample description for project 06 to test the design and layouts and how it looks.',
+      name: 'AirMetrix AQI - Web-Based Air Quality Monitor',
+      description: 'A web app that tracks and compares real-time air quality data with personalized dashboards and historical analytics.',
       tags: [
-        { color:'purple', technology: 'Tech 1' },
-        { color:'blue', technology: 'Tech 2' },
-        { color:'red', technology: 'Tech 3' },
-        { color:'green', technology: 'Tech 4' }
+        { color:'purple', technology: 'ASP.NET Core' },
+        { color:'blue', technology: 'C#' },
+        { color:'red', technology: 'JavaScript' },
+        { color:'yellow', technology: 'HTML/CSS' },
+        { color:'green', technology: 'SQL Server' },
+        { color:'pink', technology: 'Chart.js' },
+        { color:'indigo', technology: 'Leaflet' }
       ],
-      link: '#'
+      link: 'https://github.com/UminduH/AirMetrix-AQI'
+    }, {
+      imagePath: './assets/images/projects/sample-project.jpeg',
+      name: 'BookWise AutoMart - Bookstore Checkout System',
+      description: 'A self-checkout platform for bookstores featuring searching, filtering, feedback, and admin tools for inventory, offers, and user management.',
+      tags: [
+        { color:'indigo', technology: 'C#' },
+        { color:'green', technology: 'Windows Forms' },
+        { color:'red', technology: 'SQL Server' },
+      ],
+      link: 'https://github.com/ArvinFox/BookWise-AutoMart',
+      isGroupProject: true
     }];
 
     let projectsHTML = '';
@@ -87,6 +110,9 @@ export function projectsFunctionality() {
 
           <div class="project-content">
             <h3 class="project-name">${project.name}</h3>
+            ${project.isGroupProject 
+              ? `<span class="project-label group">Group Project</span>` : ''
+            }
             <p class="project-description">
               ${project.description}
             </p>

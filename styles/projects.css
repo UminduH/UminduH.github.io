@@ -79,6 +79,7 @@
 .project-name {
   font-size: 1.25rem;
   font-weight: 600;
+  line-height: 1.25;
   margin-bottom: 0.5rem;
   color: #1f2937;
 }
@@ -86,6 +87,24 @@
 .project-description {
   color: #4b5563;
   margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.project-label.group {
+  display: inline-block;
+  background-color: #ffe08a;
+  color: #5c3d00;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-role {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 1rem 0;
 }
 
 .project-tags {
