@@ -4,7 +4,7 @@ export function projectsFunctionality() {
   // Generate projects section
   function renderProjects() {
     const projects = [{
-      imagePath: './assets/images/projects/sample-project.jpeg',
+      imagePath: './assets/images/projects/go-surf.png',
       name: 'GO-SURF.LK - Online Surfboard Renting System',
       description: 'A surfboard rental platform with user reviews, board filtering, inquiry handling, and a full-featured admin panel for managing rentals and operations.',
       tags: [
@@ -17,7 +17,7 @@ export function projectsFunctionality() {
       isGroupProject: true
 
     }, {
-      imagePath: './assets/images/projects/sample-project.jpeg',
+      imagePath: './assets/images/projects/silverknight-cinema.png',
       name: 'SilverKnight Cinema - Online Movie Booking System',
       description: 'A cinema ticketing system with movie scheduling, bookings, promotions, and a comprehensive admin panel with PayPal integration.',
       tags: [
@@ -32,7 +32,7 @@ export function projectsFunctionality() {
       isGroupProject: true
 
     }, {
-      imagePath: './assets/images/projects/sample-project.jpeg',
+      imagePath: './assets/images/projects/lifeblood.png',
       name: 'LifeBlood - Blood Donation Management System',
       description: 'A cross-platform blood donation app with donor verification, medical uploads, donation history, and admin event management features.',
       tags: [
@@ -46,7 +46,7 @@ export function projectsFunctionality() {
       isGroupProject: true
 
     }, {
-      imagePath: './assets/images/projects/sample-project.jpeg',
+      imagePath: './assets/images/projects/shuttle-master.png',
       name: 'ShuttleMaster - NSBM Transpotation App',
       description: 'A shuttle booking app with role-based views, OTP login, real-time trip info, and booking management for students and drivers.',
       tags: [
@@ -60,7 +60,7 @@ export function projectsFunctionality() {
       isGroupProject: true
 
     }, {
-      imagePath: './assets/images/projects/sample-project.jpeg',
+      imagePath: './assets/images/projects/smart-sellpoint.png',
       name: 'Smart SellPoint - Retail POS System',
       description: 'A web-based POS system for retail shops with billing, inventory tracking, staff login, and product management.',
       tags: [
@@ -73,7 +73,7 @@ export function projectsFunctionality() {
       link: 'https://github.com/UminduH/Smart-SellPoint'
 
     }, {
-      imagePath: './assets/images/projects/sample-project.jpeg',
+      imagePath: './assets/images/projects/air-metrix-aqi.png',
       name: 'AirMetrix AQI - Web-Based Air Quality Monitor',
       description: 'A web app that tracks and compares real-time air quality data with personalized dashboards and historical analytics.',
       tags: [
@@ -87,7 +87,7 @@ export function projectsFunctionality() {
       ],
       link: 'https://github.com/UminduH/AirMetrix-AQI'
     }, {
-      imagePath: './assets/images/projects/sample-project.jpeg',
+      imagePath: './assets/images/projects/bookwise-automart.png',
       name: 'BookWise AutoMart - Bookstore Checkout System',
       description: 'A self-checkout platform for bookstores featuring searching, filtering, feedback, and admin tools for inventory, offers, and user management.',
       tags: [

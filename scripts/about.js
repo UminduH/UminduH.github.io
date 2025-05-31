@@ -6,7 +6,7 @@ export function aboutFunctionality() {
   function renderSkills() {
     const skills = [
       { name: 'HTML/CSS', proficiencyPercent: 95 },
-      { name: 'JavaScript', proficiencyPercent: 92 },
+      { name: 'JavaScript/TypeScript', proficiencyPercent: 92 },
       { name: 'Java', proficiencyPercent: 82 },
       { name: 'PHP', proficiencyPercent: 85 },
       { name: 'SQL (MySQL)', proficiencyPercent: 88 },
@@ -65,7 +65,7 @@ export function aboutFunctionality() {
     }
 
     function downloadFile(format) {
-      const fileName = `umindu-haputhanthri-resume.${format}`;
+      const fileName = `UMINDU_HAPUTHANTHRI_RESUME.${format}`;
       const link = document.createElement('a');
 
       link.href = `./assets/documents/${fileName}`;
