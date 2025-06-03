@@ -47,7 +47,7 @@ export function projectsFunctionality() {
 
     }, {
       imagePath: './assets/images/projects/shuttle-master.png',
-      name: 'ShuttleMaster - NSBM Transpotation App',
+      name: 'ShuttleMaster - NSBM Transportation App',
       description: 'A shuttle booking app with role-based views, OTP login, real-time trip info, and booking management for students and drivers.',
       tags: [
         { color:'blue', technology: 'Flutter' },

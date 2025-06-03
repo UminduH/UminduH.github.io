@@ -7,6 +7,7 @@ export function aboutFunctionality() {
     const skills = [
       { name: 'HTML/CSS', proficiencyPercent: 95 },
       { name: 'JavaScript/TypeScript', proficiencyPercent: 92 },
+      { name: 'C#', proficiencyPercent: 80 },
       { name: 'Java', proficiencyPercent: 82 },
       { name: 'PHP', proficiencyPercent: 85 },
       { name: 'SQL (MySQL)', proficiencyPercent: 88 },
