@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url('../assets/images/hero-background.jpg');
+  background: url("../assets/images/hero-background.jpg");
   background-size: cover;
   background-position: center right;
 }

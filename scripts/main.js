@@ -4,7 +4,7 @@ import { headerFunctionality } from "./header.js";
 import { newsletterFunctionality } from "./newsletter.js";
 import { projectsFunctionality } from "./projects.js";
 
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener("DOMContentLoaded", async () => {
   await renderPageSections();
   setupSmoothScroll();
   setupBackToTopButton();
@@ -13,18 +13,16 @@ document.addEventListener('DOMContentLoaded', async () => {
 // Load all the sections and display them accordingly
 async function renderPageSections() {
   const sections = [
-    { name: 'header', fn: headerFunctionality },
-    { name: 'hero' },
-    { name: 'about', fn: aboutFunctionality },
-    { name: 'projects', fn: projectsFunctionality },
-    { name: 'contact', fn: contactFunctionality },
-    { name: 'newsletter', fn: newsletterFunctionality },
-    { name: 'footer' }
+    { name: "header", fn: headerFunctionality },
+    { name: "hero" },
+    { name: "about", fn: aboutFunctionality },
+    { name: "projects", fn: projectsFunctionality },
+    { name: "contact", fn: contactFunctionality },
+    { name: "newsletter", fn: newsletterFunctionality },
+    { name: "footer" },
   ];
 
-  await Promise.all(
-    sections.map(section => fetchSectionHTML(section.name))
-  );
+  await Promise.all(sections.map((section) => fetchSectionHTML(section.name)));
 
   sections.forEach((section) => {
     if (section.fn) section.fn();
@@ -42,22 +40,22 @@ async function fetchSectionHTML(section) {
 // Smooth navigation of sections
 function setupSmoothScroll() {
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener('click', (e) => {
+    anchor.addEventListener("click", (e) => {
       e.preventDefault();
 
-      const targetId = anchor.getAttribute('href');
-      if (targetId === '#') return;
+      const targetId = anchor.getAttribute("href");
+      if (targetId === "#") return;
 
       const tartgetElement = document.querySelector(targetId);
       if (tartgetElement) {
         window.scrollTo({
           top: tartgetElement.offsetTop - 80,
-          behavior: 'smooth'
+          behavior: "smooth",
         });
 
-        const mobileMenu = document.getElementById('js-mobile-nav-bar')
-        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-          mobileMenu.classList.add('hidden');
+        const mobileMenu = document.getElementById("js-mobile-nav-bar");
+        if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
+          mobileMenu.classList.add("hidden");
         }
       }
     });
@@ -66,22 +64,22 @@ function setupSmoothScroll() {
 
 // Back-to-top button functionality
 function setupBackToTopButton() {
-  const backToTopBtn = document.getElementById('js-back-to-top');
+  const backToTopBtn = document.getElementById("js-back-to-top");
 
-  window.addEventListener('scroll', () => {
+  window.addEventListener("scroll", () => {
     if (window.pageYOffset > 300) {
-      backToTopBtn.style.opacity = '1';
-      backToTopBtn.style.visibility = 'visible';
+      backToTopBtn.style.opacity = "1";
+      backToTopBtn.style.visibility = "visible";
     } else {
-      backToTopBtn.style.opacity = '0';
-      backToTopBtn.style.visibility = 'hidden';
+      backToTopBtn.style.opacity = "0";
+      backToTopBtn.style.visibility = "hidden";
     }
   });
 
-  backToTopBtn.addEventListener('click', () => {
+  backToTopBtn.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   });
 }

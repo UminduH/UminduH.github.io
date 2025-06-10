@@ -1,6 +1,6 @@
 /* Miscellaneous styles */
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -8,7 +8,6 @@
 body {
   scroll-behavior: smooth;
 }
-
 
 /* Button styles */
 .btn {
@@ -37,13 +36,12 @@ body {
 .btn-secondary {
   background-color: white;
   color: #3b82f6;
-  border: 1px solid #3b82f6
+  border: 1px solid #3b82f6;
 }
 
 .btn-secondary:hover {
   background-color: #f9fafb;
 }
-
 
 /* Text color styles */
 .text-red {
@@ -54,7 +52,6 @@ body {
   color: #3b82f6;
 }
 
-
 /* Display styles */
 .flex {
   display: flex;
@@ -63,7 +60,6 @@ body {
 .hidden {
   display: none;
 }
-
 
 /* Back to top button */
 .back-to-top-btn {
