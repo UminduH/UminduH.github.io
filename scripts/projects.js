@@ -146,7 +146,7 @@ export function projectsFunctionality() {
             </div>
 
             <a href="${project.link}" class="project-link">
-              View Project &#129138;
+              View Project 🡲
             </a>
           </div>
         </div>
