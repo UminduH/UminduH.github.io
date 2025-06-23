@@ -1,5 +1,4 @@
 import { aboutFunctionality } from "./about.js";
-import { contactFunctionality } from "./contact.js";
 import { headerFunctionality } from "./header.js";
 import { newsletterFunctionality } from "./newsletter.js";
 import { projectsFunctionality } from "./projects.js";
@@ -17,7 +16,7 @@ async function renderPageSections() {
     { name: "hero" },
     { name: "about", fn: aboutFunctionality },
     { name: "projects", fn: projectsFunctionality },
-    { name: "contact", fn: contactFunctionality },
+    { name: "contact" },
     { name: "newsletter", fn: newsletterFunctionality },
     { name: "footer" },
   ];

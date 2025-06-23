@@ -7,10 +7,12 @@ export function aboutFunctionality() {
     const skills = [
       { name: "HTML/CSS", proficiencyPercent: 95 },
       { name: "JavaScript/TypeScript", proficiencyPercent: 92 },
+      { name: "Angular", proficiencyPercent: 40 },
+      { name: "React.js", proficiencyPercent: 60 },
       { name: "C#", proficiencyPercent: 80 },
       { name: "Java", proficiencyPercent: 82 },
       { name: "PHP", proficiencyPercent: 85 },
-      { name: "SQL (MySQL)", proficiencyPercent: 88 },
+      { name: "SQL (MySQL/SQL Server)", proficiencyPercent: 88 },
       { name: "Flutter (Dart)", proficiencyPercent: 90 },
       { name: "UI/UX Design", proficiencyPercent: 75 },
       { name: "Git/GitHub", proficiencyPercent: 78 },

@@ -7,7 +7,7 @@ export function projectsFunctionality() {
     const projects = [
       {
         imagePath: "./assets/images/projects/go-surf.png",
-        name: "GO-SURF.LK - Online Surfboard Renting System",
+        name: "GO-SURF.LK – Online Surfboard Renting System",
         description:
           "A surfboard rental platform with user reviews, board filtering, inquiry handling, and a full-featured admin panel for managing rentals and operations.",
         tags: [
@@ -22,7 +22,7 @@ export function projectsFunctionality() {
       },
       {
         imagePath: "./assets/images/projects/silverknight-cinema.png",
-        name: "SilverKnight Cinema - Online Movie Booking System",
+        name: "SilverKnight Cinema – Online Movie Booking System",
         description:
           "A cinema ticketing system with movie scheduling, bookings, promotions, and a comprehensive admin panel with PayPal integration.",
         tags: [
@@ -39,7 +39,7 @@ export function projectsFunctionality() {
       },
       {
         imagePath: "./assets/images/projects/lifeblood.png",
-        name: "LifeBlood - Blood Donation Management System",
+        name: "LifeBlood – Blood Donation Management System",
         description:
           "A cross-platform blood donation app with donor verification, medical uploads, donation history, and admin event management features.",
         tags: [
@@ -55,7 +55,7 @@ export function projectsFunctionality() {
       },
       {
         imagePath: "./assets/images/projects/shuttle-master.png",
-        name: "ShuttleMaster - NSBM Transportation App",
+        name: "ShuttleMaster – NSBM Transportation App",
         description:
           "A shuttle booking app with role-based views, OTP login, real-time trip info, and booking management for students and drivers.",
         tags: [
@@ -70,8 +70,23 @@ export function projectsFunctionality() {
         categories: ["mobile"],
       },
       {
+        imagePath: "./assets/images/projects/movie-finder.png",
+        name: "Movie Finder – Online Movie Searching System",
+        description:
+          "A responsive web app that allows users to search and explore movies using the TMDB API, complete with real-time search, detailed views, pagination, and a clean user interface.",
+        tags: [
+          { color: "purple", technology: "Angular" },
+          { color: "pink", technology: "TypeScript" },
+          { color: "green", technology: "TMDB API" },
+          { color: "blue", technology: "HTML/CSS" },
+        ],
+        link: "https://github.com/UminduH/Movie-Finder",
+        isGroupProject: false,
+        categories: ["web"],
+      },
+      {
         imagePath: "./assets/images/projects/smart-sellpoint.png",
-        name: "Smart SellPoint - Retail POS System",
+        name: "Smart SellPoint – Retail POS System",
         description:
           "A web-based POS system for retail shops with billing, inventory tracking, staff login, and product management.",
         tags: [
@@ -86,7 +101,7 @@ export function projectsFunctionality() {
       },
       {
         imagePath: "./assets/images/projects/air-metrix-aqi.png",
-        name: "AirMetrix AQI - Web-Based Air Quality Monitor",
+        name: "AirMetrix AQI – Web-Based Air Quality Monitor",
         description:
           "A web app that tracks and compares real-time air quality data with personalized dashboards and historical analytics.",
         tags: [
@@ -103,7 +118,7 @@ export function projectsFunctionality() {
       },
       {
         imagePath: "./assets/images/projects/bookwise-automart.png",
-        name: "BookWise AutoMart - Bookstore Checkout System",
+        name: "BookWise AutoMart – Bookstore Checkout System",
         description:
           "A self-checkout platform for bookstores featuring searching, filtering, feedback, and admin tools for inventory, offers, and user management.",
         tags: [
@@ -145,7 +160,7 @@ export function projectsFunctionality() {
               ${generateTagsForProject(project.tags)}
             </div>
 
-            <a href="${project.link}" class="project-link">
+            <a href="${project.link}" class="project-link" target="_blank">
               View Project 🡲
             </a>
           </div>

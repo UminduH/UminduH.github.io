@@ -8,49 +8,34 @@
 
     <div class="contact-grid">
       <div class="contact-form-wrapper">
-        <form action="#" class="contact-form">
+        <form action="https://formsubmit.co/uminduvh@gmail.com" method="POST" class="contact-form">
+          <!-- <input type="hidden" name="_captcha" value="false" /> -->
+          <input type="hidden" name="_next" value="https://uminduh.github.io" />
+
           <div class="form-group">
             <label for="name" class="form-label">Your Name</label>
-            <input
-              type="text"
-              id="name"
-              class="form-input"
-              placeholder="John Doe"
-            />
+            <input type="text" name="name" id="name" class="form-input" placeholder="John Doe" required />
           </div>
 
           <div class="form-group">
             <label for="email" class="form-label">Email Address</label>
-            <input
-              type="email"
-              id="email"
-              class="form-input"
-              placeholder="john.doe@example.com"
-            />
+            <input type="email" name="email" id="email" class="form-input" placeholder="john.doe@example.com"
+              required />
           </div>
 
           <div class="form-group">
             <label for="subject" class="form-label">Subject</label>
-            <input
-              type="text"
-              id="subject"
-              class="form-input"
-              placeholder="Project Inquiry"
-            />
+            <input type="text" name="subject" id="subject" class="form-input" placeholder="Project Inquiry" required />
           </div>
 
           <div class="form-group">
             <label for="message" class="form-label">Message</label>
-            <textarea
-              id="message"
-              rows="6"
-              class="form-input"
-              placeholder="Tell me about your project..."
-            ></textarea>
+            <textarea name="message" id="message" rows="6" class="form-input"
+              placeholder="Tell me about your project..." required></textarea>
           </div>
 
           <div class="form-checkbox">
-            <div class="custom-checkbox" id="consent-checkbox"></div>
+            <input type="checkbox" name="consent" id="consent-checkbox" required />
             <label for="consent-checkbox" class="checkbox-label">
               I agree to the privacy policy and terms of service
             </label>
@@ -120,19 +105,11 @@
             <h4 class="info-heading">Connect With Me</h4>
 
             <div class="social-icons">
-              <a
-                href="https://www.linkedin.com/in/umindu-haputhanthri/"
-                target="_blank"
-                class="social-icon"
-              >
+              <a href="https://www.linkedin.com/in/umindu-haputhanthri/" target="_blank" class="social-icon">
                 <i class="ri-linkedin-fill ri-lg linkedin-icon"></i>
               </a>
 
-              <a
-                href="https://github.com/UminduH"
-                target="_blank"
-                class="social-icon"
-              >
+              <a href="https://github.com/UminduH" target="_blank" class="social-icon">
                 <i class="ri-github-fill ri-lg github-icon"></i>
               </a>
             </div>
