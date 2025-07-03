@@ -22,13 +22,13 @@ export function aboutFunctionality() {
 
     skills.forEach((skill) => {
       skillsHTML += `
-        <div class="skill-item">
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
           <div class="skill-label">
             <span>${skill.name}</span>
             <span>${skill.proficiencyPercent}%</span>
           </div>
           <div class="skill-bar">
-            <div class="skill-progress" style="width: ${skill.proficiencyPercent}%;"></div>
+            <div class="skill-progress" style="width: ${skill.proficiencyPercent}%;" data-aos="fade-right" data-aos-delay="400"></div>
           </div>
         </div>
       `;

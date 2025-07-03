@@ -138,7 +138,7 @@ export function projectsFunctionality() {
       projectsHTML += `
         <div class="project-card js-project-card" data-categories="${
           project.categories
-        }">
+        }" data-aos="flip-right">
           <div class="project-image-container">
             <img src="${
               project.imagePath
@@ -161,7 +161,7 @@ export function projectsFunctionality() {
             </div>
 
             <a href="${project.link}" class="project-link" target="_blank">
-              View Project 🡲
+              View Project ➔
             </a>
           </div>
         </div>
@@ -191,7 +191,6 @@ export function projectsFunctionality() {
     filterButtons.forEach((button) => {
       button.addEventListener("click", () => {
         filterButtons.forEach((btn) => btn.classList.remove("active"));
-
         button.classList.add("active");
 
         const filter = button.getAttribute("data-filter");

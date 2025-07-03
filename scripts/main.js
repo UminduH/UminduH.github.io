@@ -53,8 +53,8 @@ function setupSmoothScroll() {
         });
 
         const mobileMenu = document.getElementById("js-mobile-nav-bar");
-        if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
-          mobileMenu.classList.add("hidden");
+        if (mobileMenu && mobileMenu.classList.contains("show")) {
+          mobileMenu.classList.remove("show");
         }
       }
     });

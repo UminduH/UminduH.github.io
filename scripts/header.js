@@ -9,8 +9,7 @@ export function headerFunctionality() {
     const mobileMenu = document.getElementById("js-mobile-nav-bar");
 
     mobileMenuBtn.addEventListener("click", () => {
-      mobileMenu.classList.toggle("flex");
-      mobileMenu.classList.toggle("hidden");
+      mobileMenu.classList.toggle("show");
     });
   }
 
